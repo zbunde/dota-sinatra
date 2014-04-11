@@ -23,7 +23,7 @@ class HeroApp < Sinatra::Application
   end
 
   post '/login' do
-    if params[:secret_password] == "password"
+    if params[:secret_password] == ENV['PASSWORD']
       session[:logged_in] = true
       redirect '/'
     else
