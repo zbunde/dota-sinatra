@@ -3,8 +3,8 @@ require 'dotenv'
 
 Dotenv.load
 
-database = if !ENV['HEROKU_POSTGRESQL_COBALT_URL'].nil?
-        ENV['HEROKU_POSTGRESQL_COBALT_URL']
+database = if !ENV['HEROKU_POSTGRESQL_BLACK_URL'].nil?
+        ENV['HEROKU_POSTGRESQL_BLACK_URL']
            else
              ENV['DATABASE_URL']
            end
