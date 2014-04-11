@@ -1,5 +1,6 @@
 require 'spec_helper'
 require_relative '../../app/hero_app'
+
 Capybara.app = HeroApp
 
 feature "Admin" do
@@ -20,7 +21,7 @@ feature "Admin" do
     click_on "Login"
     expect(page).to have_content("Incorrect Password")
 
-    fill_in "Secret Password", with: "password"
+    fill_in "Secret Password", with: ENV['PASSWORD']
     click_on "Login"
     expect(page).to have_content("Welcome, admin!")
     expect(page).to have_no_content("Log In")

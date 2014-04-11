@@ -15,7 +15,7 @@ describe 'Hero Repository' do
   end
 
   it 'can find the name of the hero by id' do
-   id = @database.create(name: "zoggert", description: "lives in a cave", hero_type: "Carry", image: "/Users/zbunde/dota2/hero_images/axe.png")
+    id = @database.create(name: "zoggert", description: "lives in a cave", hero_type: "Carry", image: "/Users/zbunde/dota2/hero_images/axe.png")
     expect(@database.find_name(id)).to eq("zoggert")
   end
 
@@ -32,8 +32,8 @@ describe 'Hero Repository' do
 
   it 'can update heroes in the database' do
     hero = @database.create(name: "frogger", description: "lives in a cave", hero_type: "Carry", image: "/Users/zbunde/dota2/hero_images/axe.png")
-    @database.update(hero, name: "cool", description: "wtf", hero_type: "Support", image:"hello")
-    expect(@database.show(hero)). to eq(id: hero, name: "cool", description: "wtf", hero_type: "Support", image: "hello")
+    @database.update(hero, name: "cool", description: "wtf", hero_type: "Support", image: "hello")
+    expect(@database.show(hero)).to eq(id: hero, name: "cool", description: "wtf", hero_type: "Support", image: "hello")
   end
   it 'can delete heroes from database' do
     hero = @database.create(name: "frogger", description: "lives in a cave", hero_type: "Carry", image: "/Users/zbunde/dota2/hero_images/axe.png")
