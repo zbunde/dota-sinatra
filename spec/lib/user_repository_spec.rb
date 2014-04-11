@@ -11,13 +11,13 @@ describe 'User Repository' do
 
   it 'it can create a user' do
     id = @usertable.create(username: "test", first_name: "noob", last_name: "wtf", email: "email@email.com")
-    expect(@usertable.index).to eq([{id: id, username: "test", first_name: "noob", last_name: ".env", email: "email@email.com"}])
+    expect(@usertable.index).to eq([{id: id, username: "test", first_name: "noob", last_name: "wtf", email: "email@email.com"}])
   end
 
   it 'can find individual users' do
     id = @usertable.create(username: "test", first_name: "noob", last_name: "wtf", email: "email@email.com")
-    @usertable.create(username: ".env", first_name: ".env", last_name: "wtf", email: ".env@.env.com")
-    expect(@usertable.find(id)).to eq(id: id, username: "test", first_name: "noob", last_name: ".env", email: "email@email.com")
+    @usertable.create(username: "wtf", first_name: "wtf", last_name: "wtf", email: "wtf@wtf.com")
+    expect(@usertable.find(id)).to eq(id: id, username: "test", first_name: "noob", last_name: "wtf", email: "email@email.com")
   end
 
   it 'can update a user in the database' do

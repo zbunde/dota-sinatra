@@ -87,7 +87,7 @@ feature "Admin" do
 
   scenario "Admin can update heroes" do
     DB[:heroes].insert(:name => "hello", :description => "wtf", :hero_type => "Carry", :image => "cool")
-    DB[:heroes].insert(:name => "hello", :description => "wtf", :hero_type => "Carry", :image => "cool")
+    DB[:heroes].insert(:name => "yoyo", :description => "yoyo", :hero_type => "Carry", :image => "cool")
 
     visit "/"
     click_on "Log In"
