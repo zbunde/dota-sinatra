@@ -10,7 +10,6 @@ namespace :db do
 
     DB = Sequel.connect(ENV['DATABASE_URL'])
     DB_TEST  = Sequel.connect(ENV['TEST_DATABASE_URL'])
-    DBSTAGING = Sequel.connect(ENV['TEST_DATABASE_URL'])
 
   end
 
