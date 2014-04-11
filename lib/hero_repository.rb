@@ -1,6 +1,6 @@
 class HeroRepository
-  def initialize(db_test)
-    @db = db_test[:heroes]
+  def initialize(db)
+    @db = db[:heroes]
   end
   def index
     @db.all
