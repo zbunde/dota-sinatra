@@ -1,0 +1,23 @@
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>Home</title>
+  <link href="http://fonts.googleapis.com/css?family=Vollkorn:400,400" rel="stylesheet" type="text/css">
+  <link href="<%= url('/css/stylesheet.css') %>" rel="stylesheet" type="text/css">
+  <link href="<%= url('/css/index-grid.css') %>" rel="stylesheet" type="text/css">
+  <link href="<%= url('/css/index.css') %>" rel="stylesheet" type="text/css">
+
+
+<p class="text-dota">Defense of the Ancients Draft</p>
+<% if logged_in %>
+<p>Welcome, admin!</p>
+ <a href="/logout" <button class="_button _button-2">Log Out</button></a>
+ <a href="/heroes" <button class="_button _button-2">All Heroes</button> </a>
+ <a href="/new" <button class="_button _button-2">Add Hero</button></a>
+ <a href="/users" <button class="_button _button-2">All Users</button></a>
+
+<% else %>
+  <a href="/login"<button class="_button _button-1">Log In&nbsp;</button></a>
+  <a href="/new_user" <button class="_button _button-3">Create Account&nbsp;</button> </a>
+  <a href="/heroes"<button class="_button _button-2">All Heroes</button></a>
+  <% end %>

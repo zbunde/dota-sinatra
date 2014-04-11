@@ -1,0 +1,15 @@
+
+<ul>
+  <li><%= user[:username] %></li>
+  <li><%= user[:first_name] %></li>
+  <li><%= user[:last_name] %></li>
+  <li><%= user[:email] %></li>
+
+</ul>
+
+  <a href="/edit_user/<%= user[:id] %>">Edit</a>
+
+  <form action="/user/<%= user[:id] %>" method="post">
+    <input type="submit" value="delete">
+  </form>
+

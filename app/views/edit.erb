@@ -1,0 +1,16 @@
+<h1>Edit <%=hero[:name] %> </h1>
+
+
+<form action="/edit/<%= hero[:id] %>" method="post">
+  <input type="text" id="name" name="name">
+  <input type="text" id="description" name="description">
+  <select name="hero_type">
+    <option value="Carry">Carry</option>
+    <option value="Support">Support</option>
+    <option value="Mid">Mid</option>
+    <option value="OffLane">Offlane</option>
+  </select>
+  <input type="file" name="Image" size="100">
+  <input type="submit" value="Edit">
+</form>
+

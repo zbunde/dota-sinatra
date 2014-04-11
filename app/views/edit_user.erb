@@ -1,0 +1,12 @@
+
+<title>Edit Account</title>
+
+<p> Edit  <%= user[:username] %></p>
+
+<form action="/edit_user/<%= user[:id]%>" method="post">
+  <input name="username" placeholder="username:" type="text">
+  <input name="first name" placeholder="first name:" type="text">
+  <input name="last name" placeholder="last name:" type="text">
+  <input name="email" placeholder="email:" type="text">
+  <input type="submit" value="Create Account">
+</form>

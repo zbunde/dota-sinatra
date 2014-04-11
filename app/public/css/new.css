@@ -1,0 +1,71 @@
+body {
+    background-color: rgba(35, 156, 43, 0.89);
+    font: 400 2.813em/1.38 Vollkorn;
+    color: rgb(201, 17, 17);
+}
+
+.-attach-image {
+    display: block;
+    float: left;
+    clear: both;
+    width: 20.25%;
+    height: 29px;
+    margin: 24px 0 0 39.75%;
+    border-radius: 3px;
+    background-color: rgb(36, 33, 33);
+    font-size: 0.356em;
+    font-weight: 400;
+    line-height: 1.38;
+    text-align: center;
+    color: rgb(228, 21, 21);
+}
+
+.-description {
+    display: block;
+    float: left;
+    clear: both;
+    width: 20.25%;
+    height: 24px;
+    margin-left: 39.75%;
+    padding: 0 10px;
+    background-color: rgb(36, 33, 33);
+    font-size: 0.289em;
+    font-weight: 400;
+    line-height: 1.38;
+    color: rgb(228, 21, 21);
+}
+
+.-name {
+    display: block;
+    float: left;
+    clear: both;
+    width: 20.25%;
+    height: 24px;
+    margin: 35px 0 0 39.75%;
+    padding: 0 10px;
+    background-color: rgb(36, 33, 33);
+    font-size: 0.289em;
+    font-weight: 400;
+    line-height: 1.38;
+    color: rgb(228, 21, 21);
+}
+
+.text-title {
+    float: left;
+    width: 50.3333333333%;
+    min-height: 78px;
+    margin: 6px 0 0 24.9166666666%;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.38;
+    text-align: center;
+    color: rgb(201, 17, 17);
+}
+
+.-description-1 {
+    margin-top: 10px;
+}
+
+.-description-2 {
+    margin-top: 13px;
+}

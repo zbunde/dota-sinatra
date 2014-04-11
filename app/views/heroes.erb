@@ -1,0 +1,12 @@
+
+
+<h1>All Heroes</h1>
+<ul>
+  <% heroes.each do |hero| %>
+
+   <li> <a href=<%= "/show/#{hero[:id]}" %>><%= hero[:name] %></a></li>
+    <% end %>
+  </ul>
+<a href="/new">Add another Hero</a>
+<br>
+<a href="/">Home</a>

@@ -1,0 +1,14 @@
+
+<ul>
+  <li><%= hero[:name] %></li>
+  <li><%= hero[:description] %></li>
+  <li><%= hero[:hero_type] %></li>
+
+</ul>
+<% if logged_in %>
+  <a href="/edit/<%= hero[:id] %>">Edit</a>
+
+  <form action="/heroes/<%= hero[:id] %>" method="post">
+    <input type="submit" value="delete">
+  </form>
+<% end %>

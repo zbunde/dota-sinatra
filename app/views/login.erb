@@ -1,0 +1,10 @@
+<form action="/login" method="post">
+  <% if error_message %>
+    <div class="error">
+      <%= error_message %>
+    </div>
+  <% end %>
+  <label for="secret-password">Secret Password</label>
+  <input type="password" id="secret-password" name="secret_password">
+  <input type="submit" value="Login">
+</form>
